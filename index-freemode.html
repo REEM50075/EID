@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>بطاقة تهنئة - عيد الأضحى المبارك</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    media="screen,projection"
+  />
+  
+    <link rel="stylesheet" href="a1.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="style.css"
+      media="screen,projection"
+    />
+ 
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body dir="rtl">
+
+    <section id="rightPanel">
+      <div class="row center-align" align="align=">
+
+
+        <a href="https://www.marketing-home.com" class="logo">
+          <img class="right-img" src="images/logo.svg" />
+        </a>
+  
+        <h2 class="right-h2">بطاقة تهنئة عيد الأضحى المبارك</h2>
+        <label class="label-p">يطيب لنا أن نقدم لك بطاقة تهنئة باسمك بمناسبة حلول عيد الاضحى المبارك لعام
+          ١٤٤٤ هــ</label>
+
+
+      </div>
+    
+
+
+    </section>
+
+    <section id="leftPanel">
+      <div class="step1">
+        <div class="row">
+         
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#323673"
+              data-textY="900"
+            >
+              <img src="images/Greeting-1.png" />
+              <span>مجموعة منزل التسويق</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#323673"
+              data-textY="900"
+            >
+              <img src="images/ch2.png" />
+              <span>منزل السراميك</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#5c4b51"
+              data-textY="900"
+            >
+              <img src="images/Greeting-1.png" />
+              <span>مخازن الإضاءة</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#ffffff"
+              data-textY="900"
+            >
+              <img src="images/arc2.jpg" />
+              <span>هاتش</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#3d5b81"
+              data-textY="900"
+            >
+              <img src="images/sa2.jpg" />
+              <span>هاتش صحية</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#323673"
+              data-textY="900"
+            >
+              <img src="brands/1x/Asset 1.png" />
+              <span>ايس بير</span>
+            </a>
+          </div>
+
+          <div class="col l4 s6">
+            <a
+              onclick="selectDesign(this)"
+              class="item"
+              data-textColor="#fff"
+              data-textY="900"
+            >
+              <img src="images/bst2.jpg" />
+              <span>محطة البناء</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="step2">
+        <div class="row">
+          <div class="col l12 s12">
+            <div id="canvas-wrap">
+              <canvas id="imageCanvas" width="1080" height="1080"></canvas>
+            </div>
+            <div class="input-field col l6 s12 pull-l3 center">
+              <input
+                class="controls__input"
+                id="name"
+                type="text"
+                maxlength="26"
+                value=""
+                placeholder="اكتب اسمك  هنا  ..."
+              />
+
+              <!-- <div class="form-group">
+                <label for="font-size-input">حجم الخط</label>
+                <div class="input-group">
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary minus-btn"
+                      type="button"
+                      onclick="decreaseFontSize()"
+                    >
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input
+                    type="range"
+                    id="font-size-input"
+                    class="form-control-range"
+                    min="1"
+                    max="128"
+                    value="50"
+                    oninput="updateText()"
+                  />
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary plus-btn"
+                      type="button"
+                      onclick="increaseFontSize()"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="x-input">X تنسيق أفقي</label>
+                <div class="input-group">
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary minus-btn"
+                      type="button"
+                      onclick="decreaseHorizontalAlignment()"
+                    >
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input
+                    type="range"
+                    id="x-input"
+                    class="form-control-range"
+                    min="0"
+                    max="1080"
+                    value="810"
+                    oninput="updateText()"
+                  />
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary plus-btn"
+                      type="button"
+                      onclick="increaseHorizontalAlignment()"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="y-input">Y تنسيق عامودي</label>
+                <div class="input-group">
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary minus-btn"
+                      type="button"
+                      onclick="decreaseVerticalAlignment()"
+                    >
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </span>
+                  <input
+                    type="range"
+                    id="y-input"
+                    class="form-control-range"
+                    min="0"
+                    max="1080"
+                    value="900"
+                    oninput="updateText()"
+                  />
+                  <span class="input-group-btn p1">
+                    <button
+                      class="btn btn-secondary plus-btn"
+                      type="button"
+                      onclick="increaseVerticalAlignment()"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+              </div> -->
+
+              <button
+                type="button"
+                onclick="convertToImage();"
+                class="waves-effect waves-light btn-large hvr-grow goForward"
+              >
+                تنزيل الصورة
+              </button>
+            
+             
+              <a
+                class="waves-effect waves-light btn-large hvr-grow outlineBTN"
+                onclick="backToHome()"
+                >العودة إلى القائمة ←</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyRights2 hide-on-med-and-up">MHG <span>2023</span></p>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/bluebird/3.3.5/bluebird.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://danml.com/js/download.js"
+    ></script>
+
+    <script>
+      var text_title = "";
+      var canvas = document.getElementById("imageCanvas");
+      var ctx = canvas.getContext("2d");
+      var img = new Image();
+      img.crossOrigin = "anonymous";
+
+      function DrawPlaceholder() {
+        img.onload = function () {
+          DrawOverlay(img);
+        };
+      }
+
+      function DrawOverlay(img) {
+        ctx.drawImage(img, 0, 0);
+        ctx.fillStyle = "rgba(0, 0, 0, 0)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+
+      function selectDesign(element) {
+        $(".step1").hide();
+        
+        $(".step2").show();
+
+        setTimeout(function () {
+          $("#name").val("").focus();
+        }, 100);
+
+        DrawPlaceholder();
+        img.src = $(element).find("img").attr("src");
+
+        document.getElementById("name").addEventListener("input", function () {
+          text_title = this.value;
+          DrawPlaceholder();
+          WrapText();
+        });
+      }
+
+      function WrapText() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+        ctx.font = "bold " + fontSize + "px 'DIN Next LT Arabic'";
+        ctx.fillStyle = "#ffffff";
+        ctx.shadowColor = "rgba(0, 0, 0, 0)";
+        ctx.shadowOffsetX = 1;
+        ctx.shadowOffsetY = 2;
+        ctx.shadowBlur = 2;
+        ctx.textAlign = "center";
+        ctx.fillText(text_title, textX, textY);
+      }
+
+      function convertToImage() {
+        var image = canvas
+          .toDataURL("image/png")
+          .replace("image/png", "image/octet-stream");
+        var currentdate = new Date();
+        download(
+          image,
+          $("#name").val() +
+            "-" +
+            (currentdate.getDay() + 1) +
+            "-" +
+            (currentdate.getMonth() + 1) +
+            "-" +
+            currentdate.getFullYear() +
+            "-" +
+            currentdate.getHours() +
+            currentdate.getMinutes() +
+            currentdate.getSeconds() +
+            ".png",
+          "image/png"
+        );
+      }
+
+   
+
+      function backToHome() {
+        $(".step2").hide();
+        $(".step1").show();
+        $("#name").val("");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+
+      var fontSize = 27;
+      var textX = 540;
+      var textY = 900;
+
+      function updateText() {
+        fontSize = parseInt(document.getElementById("font-size-input").value);
+        textX = parseInt(document.getElementById("x-input").value);
+        textY = parseInt(document.getElementById("y-input").value);
+        WrapText();
+      }
+
+      function decreaseFontSize() {
+        if (fontSize > 1) {
+          fontSize--;
+          document.getElementById("font-size-input").value = fontSize;
+          updateText();
+        }
+      }
+
+      function increaseFontSize() {
+        if (fontSize < 128) {
+          fontSize++;
+          document.getElementById("font-size-input").value = fontSize;
+          updateText();
+        }
+      }
+
+      function decreaseHorizontalAlignment() {
+        if (textX > 0) {
+          textX--;
+          document.getElementById("x-input").value = textX;
+          updateText();
+        }
+      }
+
+      function increaseHorizontalAlignment() {
+        if (textX < 1080) {
+          textX++;
+          document.getElementById("x-input").value = textX;
+          updateText();
+        }
+      }
+
+      function decreaseVerticalAlignment() {
+        if (textY > 0) {
+          textY--;
+          document.getElementById("y-input").value = textY;
+          updateText();
+        }
+      }
+
+      function increaseVerticalAlignment() {
+        if (textY < 1080) {
+          textY++;
+          document.getElementById("y-input").value = textY;
+          updateText();
+        }
+      }
+    </script>
+  </body>
+</html>

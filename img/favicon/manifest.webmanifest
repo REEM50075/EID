@@ -1,0 +1,11 @@
+{
+  "name": "MHG - Greeting tool",
+  "short_name": "MHG-Greeting",
+  "icons": [
+    { "src": "/img/favicon/android-icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/img/favicon/android-icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#333333",
+  "background_color": "#006eb6",
+  "display": "standalone"
+}
